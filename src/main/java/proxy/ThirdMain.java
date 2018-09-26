@@ -12,7 +12,7 @@ public class ThirdMain {
         
         Connection proxyConnection = null;
         
-        do{
+        do{                                     //Do-While to stay in the menu. Option 3 to exit.
             opc = Ask();
             
             switch(opc) {
@@ -39,7 +39,7 @@ public class ThirdMain {
         } while(opc!=3);
     }
     
-     public static int Ask() {
+     public static int Ask() {                  //Method to print the Options Menu
         System.out.print(
         " OPTION MENU\n"
     +   " ------ ----- \n\n"
@@ -47,6 +47,6 @@ public class ThirdMain {
     +   "2) Disonnect from the database.\n"
     +   "3) Exit.\n"
     +   "Choose an option: ");
-        return Integer.parseInt( S.nextLine() );
+        return Integer.parseInt( S.nextLine() );    
     }
 }

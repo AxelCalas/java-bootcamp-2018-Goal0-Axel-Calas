@@ -1,3 +1,4 @@
+//PROXY
 
 package proxy;
 import java.util.Scanner;
@@ -11,7 +12,7 @@ public class ConnectionProxy implements Connection {
     public ConnectionProxy()  {
         Scanner User = new Scanner(System.in);
         System.out.print("\nUser: ");
-        this.User = User.nextLine();    
+        this.User = User.nextLine();             //The proxy requests that a user be entered.
     }
     
     public void Connect() {
