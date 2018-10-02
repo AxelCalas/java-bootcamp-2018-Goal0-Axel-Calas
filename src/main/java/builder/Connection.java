@@ -19,6 +19,6 @@ public class Connection {
     }
     
     public String ToString() {
-		return "Connection Type " + typeConnection + ", User: " + user + ", Passw:" + password;
+	   return "Connection Type " + typeConnection + ", User: " + user + ", Passw:" + password;
 	}
 }

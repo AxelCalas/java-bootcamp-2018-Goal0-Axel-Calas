@@ -1,6 +1,6 @@
 package abstracFactory;
 
-public interface Connection {
+interface Connection {
     public void EnterUser();
     public void EnterPassword();
     public void ShowState();

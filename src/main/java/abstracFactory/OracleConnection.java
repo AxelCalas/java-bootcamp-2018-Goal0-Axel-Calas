@@ -1,27 +1,26 @@
 package abstracFactory;
 
-import java.util.Scanner;
-
 public class OracleConnection implements Connection {
     
-    String UserName,Password;
+    private String userName;
+    private String password;
+    
+    private GetInput getInput = new GetInput();
     
     @Override
     public void EnterUser() {
-        Scanner User = new Scanner(System.in);
         System.out.print("\n\nUser: ");
-        UserName = User.nextLine();    
+        userName = getInput.get();    
     }
     
     @Override
     public void EnterPassword() {
-        Scanner Passw = new Scanner(System.in);
         System.out.print("Passw: ");
-        Password = Passw.nextLine(); 
+        password = getInput.get();
     }
     
     @Override
     public void ShowState() {
-        System.out.println("\n"+ UserName + " is connected with Oracle\n");
+        System.out.println("\n"+ userName + " is connected with Oracle\n");
     }
 }
